@@ -7,12 +7,19 @@
 
 ```
 index.html   ページ本体
-style.css    スタイル（既存LP「JUST.DB教育プログラム」のデザイントークンを踏襲）
+style.css    スタイル（ネイビー×ゴールドの配色。HAG「未来を創る顧問」セミナーチラシのテイストを踏襲し、
+             ティールをAI/デジタル領域のアクセントカラーとして使用）
 script.js    カウントダウン・カレンダー追加・残席バー・QRコード・申込ボタン制御などの挙動
 assets/      画像を追加する場合はここに配置
 ```
 
 ## 公開前に必ず確認・更新すること
+
+0. **ロゴ**（重要）
+   ヘッダー・favicon の電球アイコンは、共有いただいたロゴ画像（ひかりデジタルパートナーズ／HIKARI ADVISOR GROUP）を
+   見た目から再現したSVGの仮実装です。正確なロゴファイル（PNG/SVGなど透過背景のもの）をいただけましたら、
+   [index.html](index.html) 内 `.brand-logo` のSVGを `<img src="assets/logo-hikari.svg">` 等に差し替えます。
+   `assets/` フォルダにファイルを置いて教えてください。
 
 1. **申込フォームURL**（最重要）
    [script.js](script.js) 冒頭の `CONFIG.FORMS_URL` を、Microsoft Forms で作成した申込フォームのURLに書き換えてください。

@@ -13,8 +13,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%2312B3A3'/%3E%3Ccircle cx='50' cy='50' r='22' fill='%23FF6B4A'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080D12'/%3E%3Cg fill='none' stroke='%232BD1BE' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M32 12a16 16 0 0 1 9 29c-1.8 1.4-2.7 2.6-2.7 4.6v1.6H25.7v-1.6c0-2-1-3.2-2.7-4.6A16 16 0 0 1 32 12Z'/%3E%3Cpath d='M26 52h12M27.5 57h9'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,13 +24,17 @@
 <header class="site-header" id="top">
   <div class="wrap">
     <a class="brand" href="#top">
-      <svg class="brand-logo" viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="46" fill="var(--primary)"/>
-        <circle cx="50" cy="50" r="22" fill="var(--accent)"/>
+      <svg class="brand-logo" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="var(--surface-solid)" stroke="var(--line)"/>
+        <g fill="none" stroke="var(--primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M32 14a14 14 0 0 1 8 25.5c-1.6 1.2-2.4 2.3-2.4 4.1v1.4h-11.2v-1.4c0-1.8-.8-2.9-2.4-4.1A14 14 0 0 1 32 14Z"/>
+          <path d="M27 50h10M28.5 55h7"/>
+          <path d="M32 21a7.5 7.5 0 0 1 5.2 12.8A7.9 7.9 0 0 1 32 36a3.4 3.4 0 0 1 0-6.8"/>
+        </g>
       </svg>
       <div>
-        <strong>ひかりデジタルパートナーズ</strong>
-        <span>生成AI活用セミナー 2026.11.27</span>
+        <strong>ひかりデジタルパートナーズ株式会社</strong>
+        <span>HIKARI ADVISOR GROUP ｜ 生成AI活用セミナー</span>
       </div>
     </a>
     <nav class="nav-links">
@@ -109,22 +113,30 @@
       </div>
       <div class="grid-4 reveal">
         <div class="audience-card">
-          <div class="audience-icon">🏢</div>
+          <div class="audience-icon">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="18" width="32" height="22" rx="3"/><path d="M18 18v-4a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v4"/><line x1="8" y1="28" x2="40" y2="28"/></svg>
+          </div>
           <h3>経営者・経営層の方</h3>
           <p>生成AIで何ができるのか、経営判断に必要な全体像を掴みたい方</p>
         </div>
         <div class="audience-card">
-          <div class="audience-icon">💻</div>
+          <div class="audience-icon audience-icon-alt">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="8" width="36" height="24" rx="3"/><line x1="16" y1="40" x2="32" y2="40"/><line x1="24" y1="32" x2="24" y2="40"/><circle cx="24" cy="20" r="5"/></svg>
+          </div>
           <h3>情報システム・DX推進担当の方</h3>
           <p>社内のAI活用ルール・ガイドライン整備を検討している方</p>
         </div>
         <div class="audience-card">
-          <div class="audience-icon">📊</div>
+          <div class="audience-icon">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><line x1="8" y1="40" x2="40" y2="40"/><rect x="12" y="26" width="6" height="14"/><rect x="21" y="18" width="6" height="22"/><rect x="30" y="10" width="6" height="30"/></svg>
+          </div>
           <h3>バックオフィス担当の方</h3>
           <p>日々の業務を効率化するAI活用のヒントを探している方</p>
         </div>
         <div class="audience-card">
-          <div class="audience-icon">🤝</div>
+          <div class="audience-icon audience-icon-alt">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="14" cy="24" r="6"/><circle cx="34" cy="14" r="6"/><circle cx="34" cy="34" r="6"/><line x1="19" y1="22" x2="29" y2="16"/><line x1="19" y1="26" x2="29" y2="32"/></svg>
+          </div>
           <h3>金融機関ご担当者様</h3>
           <p>取引先企業へのAI活用支援・情報提供を検討している方</p>
         </div>
@@ -334,6 +346,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <p>主催：ひかりデジタルパートナーズ株式会社</p>
+    <p class="muted mono">HIKARI ADVISOR GROUP</p>
     <p class="muted">&copy; 2026 Hikari Digital Partners Inc.</p>
   </div>
 </footer>
