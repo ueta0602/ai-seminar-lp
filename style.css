@@ -392,3 +392,19 @@ section{ padding: 80px 0; position: relative; }
 @media (prefers-reduced-motion: reduce){
   .reveal{ opacity:1; transform:none; transition:none; }
 }
+
+/* =========================================================
+ * Print（Canva等へPDFとして取り込むためのエクスポート用）
+ * ========================================================= */
+@page{ size: A4; margin: 0; }
+@media print{
+  *{ -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  body::before{ display:none !important; }
+  .reveal{ opacity:1 !important; transform:none !important; }
+  .site-header{ position: static !important; }
+  .menu-toggle, .mobile-nav, .calendar-row, #countdown{ display:none !important; }
+  section{ break-inside: avoid-page; page-break-after: always; }
+  section:last-of-type{ page-break-after: auto; }
+  .audience-card, .speaker-card, .accordion-item, .timeline-item, .hero-card{ break-inside: avoid; }
+  .btn{ box-shadow:none !important; }
+}
