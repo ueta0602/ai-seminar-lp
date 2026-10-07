@@ -272,15 +272,29 @@ section{ padding: 80px 0; position: relative; }
 .event-facts dt{ color: var(--ink-faint); font-family: var(--font-mono); font-size:13px; text-transform:uppercase; letter-spacing:.06em; font-weight:700; }
 .event-facts dd{ margin:0; font-weight:700; font-size:19px; text-align:right; color: var(--navy); }
 
-.countdown{ background: var(--surface-alt); border: 1px solid var(--line); border-radius: 12px; padding: 20px; text-align:center; }
-.countdown-label{ font-family: var(--font-mono); font-weight:600; color: var(--ink-faint); font-size:12px; text-transform:uppercase; letter-spacing:.14em; margin-bottom:14px; }
-.countdown-grid{ display:flex; justify-content:center; gap:16px; }
-.countdown-grid > div{ display:flex; flex-direction:column; align-items:center; min-width:48px; }
-.countdown-grid span{
-  font-family: var(--font-display); font-weight:700; font-size: clamp(25px,4.6vw,32px);
-  color: var(--navy); line-height:1;
+.countdown{
+  background: linear-gradient(160deg, var(--navy-deep), var(--navy));
+  border: none; border-radius: 14px; padding: 22px 16px; text-align:center;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.08), 0 14px 30px -16px rgba(0,29,77,.55);
 }
-.countdown-grid small{ color: var(--ink-faint); font-size:12px; margin-top:7px; }
+.countdown-label{ font-family: var(--font-mono); font-weight:600; color: rgba(255,255,255,.6); font-size:12px; text-transform:uppercase; letter-spacing:.14em; margin-bottom:16px; }
+.countdown-grid{ display:flex; justify-content:center; align-items:flex-start; gap:8px; }
+.countdown-tile{
+  display:flex; flex-direction:column; align-items:center; min-width:54px;
+  background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14);
+  border-radius: 10px; padding: 10px 6px 9px;
+}
+.countdown-tile span{
+  font-family: var(--font-mono); font-weight:700; font-size: clamp(24px,4.4vw,32px);
+  color: var(--accent-light); line-height:1; letter-spacing:.02em;
+  text-shadow: 0 0 18px rgba(255,44,41,.55);
+  font-variant-numeric: tabular-nums;
+}
+.countdown-tile small{ color: rgba(255,255,255,.55); font-size:10.5px; margin-top:7px; letter-spacing:.04em; }
+.countdown-sep{
+  font-family: var(--font-mono); font-weight:700; color: rgba(255,255,255,.3);
+  font-size: clamp(20px,3.6vw,26px); line-height:1; margin-top:12px;
+}
 
 /* ===== Audience grid ===== */
 .grid-4{ display:grid; grid-template-columns: repeat(4,1fr); gap:20px; }
