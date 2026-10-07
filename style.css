@@ -239,8 +239,6 @@ section{ padding: 80px 0; position: relative; }
 .hero-cta-row{ display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-bottom: 20px; }
 .hero .btn-ghost{ background: rgba(0,0,0,.3); border-color: rgba(255,255,255,.4); color:#fff; text-shadow: 0 1px 6px rgba(0,0,0,.5); }
 .hero .btn-ghost:hover{ border-color: var(--accent-light); }
-.calendar-row{ display:flex; gap:16px; flex-wrap:wrap; align-items:center; font-size:14px; }
-.calendar-label{ color: rgba(255,255,255,.75); font-family: var(--font-mono); font-size:12px; text-transform:uppercase; letter-spacing:.08em; text-shadow: 0 1px 6px rgba(0,0,0,.5); }
 .hero .link-btn{ color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,.5); }
 .hero .link-btn:hover{ color: #fff; }
 
@@ -250,9 +248,26 @@ section{ padding: 80px 0; position: relative; }
   padding: 30px;
   color: var(--ink);
 }
-.event-facts{ margin:0 0 24px; display:flex; flex-direction:column; gap:14px; }
+.event-facts{ margin:0 0 20px; display:flex; flex-direction:column; gap:14px; }
 .event-facts > div{ display:flex; justify-content:space-between; align-items:baseline; gap:12px; border-bottom: 1px solid var(--line); padding-bottom:14px; }
 .event-facts > div:last-child{ border-bottom:none; padding-bottom:0; }
+.event-facts > .card-calendar{
+  display:flex; flex-direction:column; align-items:stretch; gap:8px;
+}
+.card-calendar-label{
+  font-family: var(--font-mono); font-size:12.5px; color: var(--ink-muted);
+  text-transform:uppercase; letter-spacing:.08em; font-weight:700;
+}
+.card-calendar-btns{ display:flex; gap:10px; flex-wrap:wrap; }
+.card-calendar-btns .link-btn{
+  display:inline-flex; align-items:center; gap:6px;
+  background: var(--navy-soft); color: var(--navy);
+  font-size:13.5px; font-weight:700; text-decoration:none;
+  padding:8px 14px; border-radius: 999px; border: 1px solid rgba(0,46,98,.2);
+  transition: background .15s ease, color .15s ease;
+}
+.card-calendar-btns .link-btn::before{ content:"📅"; font-size:13px; }
+.card-calendar-btns .link-btn:hover{ background: var(--navy); color:#fff; }
 .event-facts dt{ color: var(--ink-faint); font-family: var(--font-mono); font-size:13px; text-transform:uppercase; letter-spacing:.06em; font-weight:700; }
 .event-facts dd{ margin:0; font-weight:700; font-size:19px; text-align:right; color: var(--navy); }
 
@@ -424,7 +439,7 @@ section{ padding: 80px 0; position: relative; }
   body::before{ display:none !important; }
   .reveal{ opacity:1 !important; transform:none !important; }
   .site-header{ position: static !important; }
-  .menu-toggle, .mobile-nav, .calendar-row, #countdown{ display:none !important; }
+  .menu-toggle, .mobile-nav, .card-calendar, #countdown{ display:none !important; }
   section{ break-inside: avoid-page; page-break-after: always; }
   section:last-of-type{ page-break-after: auto; }
   .audience-card, .speaker-card, .accordion-item, .timeline-item, .hero-card{ break-inside: avoid; }
