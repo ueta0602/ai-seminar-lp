@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中小企業の生成AI活用について｜ひかりデジタルパートナーズ オンラインセミナー</title>
+<meta name="description" content="2026年11月27日(金)14:00〜16:00開催。中小企業の生成AI活用をテーマに、freee・フィラーシステムズ・aicrew各社とひかりデジタルパートナーズが解説するオンライン無料セミナー。">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="中小企業の生成AI活用について｜オンラインセミナー">
+<meta property="og:description" content="2026年11月27日(金)14:00〜16:00開催。生成AI活用の最前線を各分野のプロフェッショナルが解説する無料オンラインセミナー。">
+<!-- TODO: OGPシェア画像を用意したら /assets/ogp.png を配置し、og:image / twitter:card を追加してください -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%2312B3A3'/%3E%3Ccircle cx='50' cy='50' r='22' fill='%23FF6B4A'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <svg class="brand-logo" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" fill="var(--primary)"/>
+        <circle cx="50" cy="50" r="22" fill="var(--accent)"/>
+      </svg>
+      <div>
+        <strong>ひかりデジタルパートナーズ</strong>
+        <span>生成AI活用セミナー 2026.11.27</span>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="#overview">概要</a>
+      <a href="#program">プログラム</a>
+      <a href="#speakers">登壇者</a>
+      <a href="#join">参加方法</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-primary btn-sm cta-apply" href="#" target="_blank" rel="noopener">今すぐ申込む</a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#overview">概要</a>
+    <a href="#program">プログラム</a>
+    <a href="#speakers">登壇者</a>
+    <a href="#join">参加方法</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn btn-primary cta-apply" href="#" target="_blank" rel="noopener">今すぐ申込む</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="inner reveal">
+        <span class="chip">参加無料 ｜ オンライン開催 ｜ 定員200名</span>
+        <h1>中小企業の<em>生成AI活用</em>について</h1>
+        <p class="sub">顧問先企業様・提携金融機関様向けの特別セミナーです。経営のヒントになる生成AI活用の最前線を、各分野のプロフェッショナルが分かりやすく解説します。</p>
+
+        <div class="hero-cta-row">
+          <a class="btn btn-primary cta-apply" href="#" target="_blank" rel="noopener">今すぐ申込む</a>
+          <a class="btn btn-ghost" href="#program">プログラムを見る</a>
+        </div>
+
+        <div class="calendar-row">
+          <span class="calendar-label">カレンダーに追加:</span>
+          <button class="link-btn" id="addGoogleCal" type="button">Google カレンダー</button>
+          <button class="link-btn" id="addIcsCal" type="button">Outlook / iCal (.ics)</button>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <dl class="event-facts">
+          <div><dt>日程</dt><dd>2026年11月27日（金）</dd></div>
+          <div><dt>時間</dt><dd>14:00〜16:00</dd></div>
+          <div><dt>会場</dt><dd>WEB形式のみ（Zoom等を予定）</dd></div>
+          <div><dt>定員</dt><dd>約200名</dd></div>
+          <div><dt>参加費</dt><dd>無料</dd></div>
+          <div><dt>主催</dt><dd>ひかりデジタルパートナーズ株式会社</dd></div>
+        </dl>
+        <div class="countdown" id="countdown" aria-live="polite">
+          <div class="countdown-label">開催まで</div>
+          <div class="countdown-grid">
+            <div><span id="cd-days">--</span><small>日</small></div>
+            <div><span id="cd-hours">--</span><small>時間</small></div>
+            <div><span id="cd-min">--</span><small>分</small></div>
+            <div><span id="cd-sec">--</span><small>秒</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Overview / Target ===== -->
+  <section id="overview">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="chip">OVERVIEW</span>
+        <h2>こんな方におすすめのセミナーです</h2>
+        <p class="lead">「生成AIは気になっているが、自社でどう活かせば良いか分からない」という方に向けて、導入事例から社内ルール整備までを一気通貫でご紹介します。</p>
+      </div>
+      <div class="grid-4 reveal">
+        <div class="audience-card">
+          <div class="audience-icon">🏢</div>
+          <h3>経営者・経営層の方</h3>
+          <p>生成AIで何ができるのか、経営判断に必要な全体像を掴みたい方</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">💻</div>
+          <h3>情報システム・DX推進担当の方</h3>
+          <p>社内のAI活用ルール・ガイドライン整備を検討している方</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">📊</div>
+          <h3>バックオフィス担当の方</h3>
+          <p>日々の業務を効率化するAI活用のヒントを探している方</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">🤝</div>
+          <h3>金融機関ご担当者様</h3>
+          <p>取引先企業へのAI活用支援・情報提供を検討している方</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Program ===== -->
+  <section id="program" class="section-alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="chip">PROGRAM</span>
+        <h2>当日のプログラム（予定）</h2>
+        <p class="lead">14:00〜16:00の2時間で、5つのセッションをお届けします。各セッション20〜40分で調整中です。</p>
+      </div>
+
+      <ol class="timeline reveal">
+        <li class="timeline-item">
+          <div class="timeline-time">14:00<span>〜14:10</span></div>
+          <div class="timeline-body">
+            <span class="timeline-tag">オープニング</span>
+            <h3>本日のAIセミナーの説明</h3>
+            <p class="timeline-speaker">ひかりデジタルパートナーズ株式会社　上田</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-time">14:10<span>〜14:40</span></div>
+          <div class="timeline-body">
+            <span class="timeline-tag">セッション1</span>
+            <h3>freeeとAIの進化について</h3>
+            <p class="timeline-speaker">freee株式会社　パートナー事業本部　手向部長（仮）</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-time">14:40<span>〜15:05</span></div>
+          <div class="timeline-body">
+            <span class="timeline-tag">セッション2</span>
+            <h3>AI時代のシステム開発</h3>
+            <p class="timeline-speaker">株式会社フィラーシステムズ　鴻池社長（仮）</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-time">15:05<span>〜15:30</span></div>
+          <div class="timeline-body">
+            <span class="timeline-tag">セッション3</span>
+            <h3>AI動画の中小企業向け使い方</h3>
+            <p class="timeline-speaker">株式会社aicrew　文村関西支社長（仮）</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-time">15:30<span>〜15:55</span></div>
+          <div class="timeline-body">
+            <span class="timeline-tag">セッション4</span>
+            <h3>AI活用全体　社内AIガイドライン統制の重要性</h3>
+            <p class="timeline-speaker">ひかりデジタルパートナーズ株式会社　井元（仮）</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-time">15:55<span>〜16:00</span></div>
+          <div class="timeline-body">
+            <span class="timeline-tag">クロージング</span>
+            <h3>まとめ・お知らせ</h3>
+          </div>
+        </li>
+      </ol>
+      <p class="note">※登壇者・時間・内容は現在調整中のため、当日までに変更となる場合がございます。</p>
+    </div>
+  </section>
+
+  <!-- ===== Speakers ===== -->
+  <section id="speakers">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="chip">SPEAKERS</span>
+        <h2>登壇者紹介</h2>
+        <p class="lead">カードにカーソルを合わせる（タップする）と、プロフィールの詳細が表示されます。</p>
+      </div>
+
+      <div class="grid-speakers reveal">
+        <div class="speaker-card" tabindex="0">
+          <div class="speaker-face" style="--c:#12B3A3">上</div>
+          <h3>上田 様</h3>
+          <p class="speaker-role">ひかりデジタルパートナーズ株式会社</p>
+          <p class="speaker-topic">「本日のAIセミナーの説明」</p>
+          <div class="speaker-detail">
+            <p>プロフィール準備中です。本セミナーの趣旨説明を担当します。</p>
+          </div>
+        </div>
+
+        <div class="speaker-card" tabindex="0">
+          <div class="speaker-face" style="--c:#FF6B4A">手</div>
+          <h3>手向 部長（仮）</h3>
+          <p class="speaker-role">freee株式会社　パートナー事業本部</p>
+          <p class="speaker-topic">「freeeとAIの進化について」</p>
+          <div class="speaker-detail">
+            <p>プロフィール準備中です。freeeにおけるAI活用の最新動向をご紹介予定です。</p>
+          </div>
+        </div>
+
+        <div class="speaker-card" tabindex="0">
+          <div class="speaker-face" style="--c:#2BAE66">鴻</div>
+          <h3>鴻池 社長（仮）</h3>
+          <p class="speaker-role">株式会社フィラーシステムズ</p>
+          <p class="speaker-topic">「AI時代のシステム開発」</p>
+          <div class="speaker-detail">
+            <p>プロフィール準備中です。システム開発現場でのAI活用についてお話しいただきます。</p>
+          </div>
+        </div>
+
+        <div class="speaker-card" tabindex="0">
+          <div class="speaker-face" style="--c:#8A63D2">文</div>
+          <h3>文村 関西支社長（仮）</h3>
+          <p class="speaker-role">株式会社aicrew</p>
+          <p class="speaker-topic">「AI動画の中小企業向け使い方」</p>
+          <div class="speaker-detail">
+            <p>プロフィール準備中です。中小企業でも使えるAI動画活用の実践法をご紹介予定です。</p>
+          </div>
+        </div>
+
+        <div class="speaker-card" tabindex="0">
+          <div class="speaker-face" style="--c:#E0A030">井</div>
+          <h3>井元 様（仮）</h3>
+          <p class="speaker-role">ひかりデジタルパートナーズ株式会社</p>
+          <p class="speaker-topic">「AI活用全体　社内AIガイドライン統制の重要性」</p>
+          <div class="speaker-detail">
+            <p>プロフィール準備中です。社内AIガイドライン整備のポイントを解説します。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== How to join ===== -->
+  <section id="join" class="section-alt">
+    <div class="wrap join-grid">
+      <div class="reveal">
+        <span class="chip">HOW TO JOIN</span>
+        <h2>参加方法</h2>
+        <ul class="check-list">
+          <li>完全オンライン（WEB）形式での開催です。会場での参加はございません。</li>
+          <li>視聴にはインターネット環境とPC・スマートフォン等の端末が必要です。</li>
+          <li>お申込み後、視聴用URLを登録いただいたメールアドレス宛にご案内します。</li>
+          <li>クライアント企業様・提携金融機関様のご紹介を中心に、どなたでもご参加いただけます。</li>
+        </ul>
+      </div>
+      <div class="reveal qr-card">
+        <p class="qr-caption">このページをスマートフォンで開く</p>
+        <div id="qrcode" class="qr-box"></div>
+        <p class="qr-note">社内掲示・チラシ等でのご案内にご活用ください</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="chip">FAQ</span>
+        <h2>よくあるご質問</h2>
+      </div>
+      <div class="accordion reveal">
+        <details class="accordion-item" open>
+          <summary>参加費用はかかりますか？</summary>
+          <div class="accordion-body"><p>無料でご参加いただけます。</p></div>
+        </details>
+        <details class="accordion-item">
+          <summary>アーカイブ配信（録画）はありますか？</summary>
+          <div class="accordion-body"><p>アーカイブ配信を予定しております（調整中）。詳細はお申込み後にご案内いたします。</p></div>
+        </details>
+        <details class="accordion-item">
+          <summary>どのように視聴すればよいですか？</summary>
+          <div class="accordion-body"><p>Web会議システム（Zoom等を予定）での配信を予定しております。お申込み後、視聴用URLをメールでご案内します。</p></div>
+        </details>
+        <details class="accordion-item">
+          <summary>対象者は決まっていますか？</summary>
+          <div class="accordion-body"><p>経営者の方に限らず、情報システム・バックオフィスご担当者様など、どなたでもご参加いただけます。</p></div>
+        </details>
+        <details class="accordion-item">
+          <summary>提携金融機関からの紹介でも申込めますか？</summary>
+          <div class="accordion-body"><p>もちろん可能です。お気軽にお申込みください。</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Entry ===== -->
+  <section id="entry" class="section-alt entry-section">
+    <div class="wrap">
+      <div class="entry-card reveal">
+        <span class="chip">ENTRY</span>
+        <h2>お申込みはこちら</h2>
+        <p class="lead">下記ボタンより、お申込みフォームへお進みください。</p>
+
+        <div class="capacity">
+          <div class="capacity-bar"><div class="capacity-fill" id="capacityFill"></div></div>
+          <p class="capacity-text" id="capacityText">定員まで余裕があります</p>
+        </div>
+
+        <a class="btn btn-primary btn-lg cta-apply" href="#" target="_blank" rel="noopener">お申込みフォームへ進む</a>
+        <p class="note">※フォームはMicrosoft Formsで作成しています。いただいた回答は社内のSharePoint（Excel）に自動集計されます。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>主催：ひかりデジタルパートナーズ株式会社</p>
+    <p class="muted">&copy; 2026 Hikari Digital Partners Inc.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
