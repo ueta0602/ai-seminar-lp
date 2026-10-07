@@ -163,6 +163,58 @@
     });
   }
 
+  /* ===== 紹介ツール（税理士・金融機関ご担当者様向け） ===== */
+  const pageUrl = window.location.origin + window.location.pathname;
+  const referralText = document.getElementById("referralText");
+  const referralUrl = document.getElementById("referralUrl");
+  if (referralText) referralText.value = referralText.value.replace("{{PAGE_URL}}", pageUrl);
+  if (referralUrl) referralUrl.textContent = pageUrl;
+
+  function flashCopied(btn, originalLabel) {
+    btn.textContent = "コピーしました ✓";
+    btn.classList.add("is-copied");
+    setTimeout(() => {
+      btn.textContent = originalLabel;
+      btn.classList.remove("is-copied");
+    }, 1800);
+  }
+
+  function copyText(text, btn) {
+    const originalLabel = btn.textContent;
+    const done = () => flashCopied(btn, originalLabel);
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done));
+    } else {
+      fallbackCopy(text, done);
+    }
+  }
+
+  function fallbackCopy(text, done) {
+    const tmp = document.createElement("textarea");
+    tmp.value = text;
+    tmp.style.position = "fixed";
+    tmp.style.opacity = "0";
+    document.body.appendChild(tmp);
+    tmp.select();
+    let ok = false;
+    try {
+      ok = document.execCommand("copy");
+    } catch (e) {
+      ok = false;
+    }
+    tmp.remove();
+    if (ok) done();
+  }
+
+  const copyReferralText = document.getElementById("copyReferralText");
+  if (copyReferralText && referralText) {
+    copyReferralText.addEventListener("click", () => copyText(referralText.value, copyReferralText));
+  }
+  const copyReferralUrl = document.getElementById("copyReferralUrl");
+  if (copyReferralUrl && referralUrl) {
+    copyReferralUrl.addEventListener("click", () => copyText(referralUrl.textContent, copyReferralUrl));
+  }
+
   /* ===== モバイルメニュー ===== */
   const menuToggle = document.getElementById("menuToggle");
   const mobileNav = document.getElementById("mobileNav");

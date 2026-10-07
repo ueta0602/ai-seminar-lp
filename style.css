@@ -422,6 +422,27 @@ section{ padding: 80px 0; position: relative; }
 .qr-box img{ border-radius: 2px; }
 .qr-note{ color: var(--ink-faint); font-size:13px; }
 
+/* ===== Referral kit ===== */
+.referral-card{
+  max-width: 760px; margin: 0 auto; display:flex; flex-direction:column; gap:26px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-card);
+  padding: 32px; box-shadow: var(--shadow-card);
+}
+.referral-label{ font-family: var(--font-mono); font-size:12px; font-weight:700; color: var(--ink-faint); text-transform:uppercase; letter-spacing:.08em; margin-bottom:10px; }
+.referral-textarea{
+  width:100%; resize:vertical; min-height:180px;
+  font-family: var(--font-body); font-size:14.5px; line-height:1.8; color: var(--ink);
+  background: var(--surface-alt); border: 1px solid var(--line); border-radius: 10px;
+  padding: 14px 16px; margin-bottom:12px;
+}
+.referral-url-row{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+.referral-url{
+  flex:1; min-width:0; font-family: var(--font-mono); font-size:13.5px; color: var(--navy);
+  background: var(--surface-alt); border: 1px solid var(--line); border-radius: 8px;
+  padding: 11px 14px; overflow-x:auto; white-space:nowrap;
+}
+.copy-btn.is-copied{ background: var(--navy); color:#fff; border-color: var(--navy); }
+
 /* ===== FAQ ===== */
 .accordion{ max-width: 760px; margin: 0 auto; display:flex; flex-direction:column; gap:10px; }
 .accordion-item{

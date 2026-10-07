@@ -296,6 +296,43 @@
     </div>
   </section>
 
+  <!-- ===== Referral kit (for introducers) ===== -->
+  <section id="referral">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">FOR INTRODUCERS</span>
+        <h2>税理士・金融機関ご担当者様へ</h2>
+        <p class="lead">顧問先・お取引先へのご案内にそのままお使いいただける文面とURLです。コピーしてメールやチャットでお送りください。</p>
+      </div>
+      <div class="referral-card reveal">
+        <div class="referral-block">
+          <p class="referral-label">ご案内文（コピー用）</p>
+          <textarea id="referralText" class="referral-textarea" rows="9" readonly>いつもお世話になっております。
+
+このたび、中小企業の経営者様向けに「生成AIの徹底活用」をテーマにしたオンラインセミナーのご案内をいたします。
+
+■ 未来を創る顧問セミナー 第3回
+「中小企業の生成AI徹底活用セミナー」
+日時：2026年11月27日（金）14:00〜16:00
+形式：オンライン（Zoom）／参加無料
+詳細・お申込みはこちら：
+{{PAGE_URL}}
+
+生成AI活用の最前線を各分野のプロフェッショナルが分かりやすく解説いたします。ご興味がございましたら、ぜひご参加をご検討ください。</textarea>
+          <button class="btn btn-ghost btn-sm copy-btn" id="copyReferralText" type="button">文面をコピー</button>
+        </div>
+        <div class="referral-block">
+          <p class="referral-label">セミナーページURL</p>
+          <div class="referral-url-row">
+            <code id="referralUrl" class="referral-url">{{PAGE_URL}}</code>
+            <button class="btn btn-primary btn-sm copy-btn" id="copyReferralUrl" type="button">URLをコピー</button>
+          </div>
+          <p class="note">※「文面をコピー」でURLを含むご案内文をまとめてコピーできます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== FAQ ===== -->
   <section id="faq">
     <div class="wrap">
