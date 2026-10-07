@@ -15,11 +15,11 @@ assets/      画像を追加する場合はここに配置
 
 ## 公開前に必ず確認・更新すること
 
-0. **ロゴ**（重要）
-   ヘッダー・favicon の電球アイコンは、共有いただいたロゴ画像（ひかりデジタルパートナーズ／HIKARI ADVISOR GROUP）を
-   見た目から再現したSVGの仮実装です。正確なロゴファイル（PNG/SVGなど透過背景のもの）をいただけましたら、
-   [index.html](index.html) 内 `.brand-logo` のSVGを `<img src="assets/logo-hikari.svg">` 等に差し替えます。
-   `assets/` フォルダにファイルを置いて教えてください。
+0. **ロゴ・登壇者写真**（対応済み）
+   ひかりデジタルパートナーズ・aicrewの正式ロゴ（`assets/logo-hikari.png` / `assets/logo-aicrew.png`）、
+   favicon（`assets/favicon-hikari.png`）、上田・文村の顔写真（`assets/speaker-ueda.jpg` / `assets/speaker-fumimura.jpg`）を反映済みです。
+   freee・フィラーシステムズのロゴ／登壇者写真が届いたら、同様に`assets/`へ配置し、
+   [index.html](index.html) の該当 `.speaker-face` / `.speaker-logo` を差し替えてください。
 
 1. **申込フォームURL**（最重要）
    [script.js](script.js) 冒頭の `CONFIG.FORMS_URL` を、Microsoft Forms で作成した申込フォームのURLに書き換えてください。
@@ -30,9 +30,8 @@ assets/      画像を追加する場合はここに配置
    ```
 
 2. **登壇者情報**
-   現在は社名・役職ともに「（仮）」表記でプレースホルダーになっています。
+   freee・フィラーシステムズ・井元は社名・役職ともに「（仮）」表記のプレースホルダーのままです。
    登壇者が確定したら [index.html](index.html) の `#program`（プログラム）と `#speakers`（登壇者紹介）セクションを更新してください。
-   顔写真をもらえた場合は、`.speaker-face` のイニシャル円を `<img>` タグに差し替えると自然に反映されます。
 
 3. **残席表示**（任意）
    `script.js` の `CONFIG.REGISTERED_SEATS` を実際の申込人数に合わせて更新すると、
