@@ -1,34 +1,32 @@
 /* =========================================================
- * HIKARI ADVISOR GROUP — Navy × Deep Red corporate theme
- * (過去セミナーチラシのネイビーのテイストをベースに、
- *  深い赤をプレミアムアクセント、ティールをAI/デジタル領域の
- *  アクセントとして使用。角丸・彩度を抑えてポップさを除去)
+ * HIKARI ADVISOR GROUP 公式ブランドカラー準拠テーマ
+ * （260925_HAGスライドマスター.pptx の「パーツ集」スライドより
+ *  HAG BLUE = #002E62 / HAG RED = #CA0101 を抽出して使用。
+ *  本文色・背景も同資料の暖色系グレー／アイボリーに合わせた）
  * ========================================================= */
 :root{
-  --navy-deep: #0A1C45;
-  --navy: #112A63;
-  --navy-mid: #1F3F87;
-  --primary: #178C86;      /* teal: AI / デジタル アクセント */
-  --primary-deep: #126F6B;
-  --primary-soft: rgba(23,140,134,0.10);
-  --accent: #8E2435;       /* 深い赤: プレミアム アクセント */
-  --accent-deep: #6C1B29;
-  --accent-light: #B23A4D;
-  --accent-soft: rgba(142,36,53,0.10);
-  --bg: #F6F7FA;
+  --navy-deep: #001D4D;    /* HAG BLUE グラデーション最暗部 */
+  --navy: #002E62;         /* HAG BLUE（公式） */
+  --navy-mid: #004F8A;     /* HAG BLUE グラデーション中間部 */
+  --navy-soft: rgba(0,46,98,0.08);
+  --accent: #CA0101;       /* HAG RED（公式） */
+  --accent-deep: #BB0100;  /* HAG RED グラデーション暗部 */
+  --accent-light: #FF2C29; /* HAG RED グラデーション明部 */
+  --accent-soft: #FFCACE;  /* 公式資料の赤系ライトトーン */
+  --bg: #FAF9F6;           /* 公式アイボリー(#EAE5DA)を薄めたニュートラル地 */
   --surface: #FFFFFF;
-  --surface-solid: #EEF1F7;
-  --surface-alt: #EEF0F6;
-  --ink: #16213D;
-  --ink-muted: #5B6B86;
-  --ink-faint: #93A1B8;
-  --line: #E3E7EF;
-  --line-strong: #CBD2E0;
+  --surface-solid: #F2EFE9;
+  --surface-alt: #F3F1EB;
+  --ink: #4E4C4B;          /* 公式資料の本文色（暖色グレー） */
+  --ink-muted: #76736F;
+  --ink-faint: #A6A29A;
+  --line: #E6E2D9;
+  --line-strong: #D3CDC0;
   --radius-card: 14px;
   --radius-btn: 10px;
   --radius-tag: 7px;
-  --shadow-card: 0 10px 26px -16px rgba(17,42,99,.16);
-  --shadow-card-hover: 0 16px 34px -14px rgba(17,42,99,.22);
+  --shadow-card: 0 10px 26px -16px rgba(0,29,77,.16);
+  --shadow-card-hover: 0 16px 34px -14px rgba(0,29,77,.22);
   --font-display: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
   --font-body: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
   --font-mono: "JetBrains Mono", "SFMono-Regular", "Consolas", monospace;
@@ -67,7 +65,7 @@ h1,h2,h3,h4{
 }
 p{ margin:0; }
 ul{ margin:0; padding:0; }
-:focus-visible{ outline: 2px solid var(--primary); outline-offset: 3px; }
+:focus-visible{ outline: 2px solid var(--navy); outline-offset: 3px; }
 .mono{ font-family: var(--font-mono); letter-spacing: .04em; }
 
 .skip-link{
@@ -81,18 +79,18 @@ section{ padding: 80px 0; position: relative; }
 .section-alt{
   background: var(--surface-alt);
   box-shadow:
-    inset 0 2px 0 0 rgba(142,36,53,.18),
-    inset 0 -2px 0 0 rgba(23,140,134,.18);
+    inset 0 2px 0 0 rgba(202,1,1,.18),
+    inset 0 -2px 0 0 rgba(0,46,98,.18);
 }
 @media (max-width: 720px){ section{ padding: 60px 0; } }
 
 .chip{
   display:inline-flex; align-items:center; gap:8px;
-  background: var(--primary-soft); color: var(--primary-deep);
+  background: var(--navy-soft); color: var(--navy);
   font-family: var(--font-mono); font-weight: 600; font-size: 11.5px;
   text-transform: uppercase; letter-spacing: .14em;
   padding: 7px 14px; border-radius: var(--radius-tag);
-  border: 1px solid rgba(23,140,134,.25);
+  border: 1px solid rgba(0,46,98,.2);
 }
 .eyebrow{
   display:inline-flex; align-items:center; gap:12px;
@@ -160,15 +158,15 @@ section{ padding: 80px 0; position: relative; }
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
   white-space: nowrap;
 }
-.btn:hover{ transform: translateY(-1px); border-color: var(--primary); box-shadow: var(--shadow-card-hover); }
+.btn:hover{ transform: translateY(-1px); border-color: var(--navy); box-shadow: var(--shadow-card-hover); }
 .btn-arrow{ display:inline-block; margin-left: 2px; transition: transform .25s ease; }
 .btn:hover .btn-arrow{ transform: translateX(4px); }
 .btn-primary{
   background: linear-gradient(135deg, var(--accent), var(--accent-light));
   border: none; color: #fff; font-weight:700;
-  box-shadow: 0 10px 24px -12px rgba(142,36,53,.55);
+  box-shadow: 0 10px 24px -12px rgba(202,1,1,.5);
 }
-.btn-primary:hover{ box-shadow: 0 14px 30px -10px rgba(142,36,53,.6); }
+.btn-primary:hover{ box-shadow: 0 14px 30px -10px rgba(202,1,1,.55); }
 .btn-ghost{ background: #fff; }
 .btn-sm{ padding: 9px 20px; font-size: 13px; }
 .btn-lg{ padding: 18px 40px; font-size: 16.5px; margin: 24px 0 10px; }
@@ -177,7 +175,7 @@ section{ padding: 80px 0; position: relative; }
 
 .link-btn{
   background:none; border:none; padding:0; cursor:pointer;
-  color: var(--primary-deep); font-weight:700; font-size:13px;
+  color: var(--navy); font-weight:700; font-size:13px;
   text-decoration: underline; text-underline-offset: 3px;
 }
 .link-btn:hover{ color: var(--accent); }
@@ -192,8 +190,8 @@ section{ padding: 80px 0; position: relative; }
 .hero::before{
   content:""; position:absolute; inset:0; z-index:0;
   background:
-    radial-gradient(640px 420px at 90% -12%, rgba(142,36,53,.3), transparent 62%),
-    radial-gradient(520px 360px at -8% 112%, rgba(23,140,134,.24), transparent 62%);
+    radial-gradient(640px 420px at 90% -12%, rgba(202,1,1,.28), transparent 62%),
+    radial-gradient(520px 360px at -8% 112%, rgba(0,79,138,.3), transparent 62%);
 }
 .hero::after{
   content:""; position:absolute; inset:0; z-index:0; opacity:.3;
@@ -205,7 +203,7 @@ section{ padding: 80px 0; position: relative; }
 }
 .hero-divider{
   position:relative; z-index:1; height:3px; margin-top:52px;
-  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-light) 35%, var(--primary) 100%);
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-light) 35%, var(--navy) 100%);
   opacity:.85;
 }
 .hero .wrap{ position:relative; z-index:1; padding-top: 4px; padding-bottom: 44px; }
@@ -258,10 +256,10 @@ section{ padding: 80px 0; position: relative; }
 .audience-card:hover{ transform: translateY(-3px); box-shadow: var(--shadow-card-hover); }
 .audience-icon{
   width:52px; height:52px; margin: 0 auto 18px; border-radius:50%;
-  background: var(--primary-soft); border: 1px solid rgba(23,140,134,.22);
-  display:flex; align-items:center; justify-content:center; color: var(--primary-deep);
+  background: var(--navy-soft); border: 1px solid rgba(0,46,98,.18);
+  display:flex; align-items:center; justify-content:center; color: var(--navy);
 }
-.audience-icon-alt{ background: var(--accent-soft); border-color: rgba(142,36,53,.25); color: var(--accent); }
+.audience-icon-alt{ background: var(--accent-soft); border-color: rgba(202,1,1,.25); color: var(--accent); }
 .audience-icon svg{ width:24px; height:24px; fill:none; stroke:currentColor; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
 .audience-card h3{ font-size:16px; margin-bottom:11px; color: var(--navy); }
 .audience-card p{ color: var(--ink-muted); font-size:13.5px; }
@@ -279,7 +277,7 @@ section{ padding: 80px 0; position: relative; }
   background: var(--navy);
   color: #fff; font-family: var(--font-display); font-weight:700; font-size:14px;
   display:flex; align-items:center; justify-content:center;
-  box-shadow: 0 6px 14px -4px rgba(17,42,99,.45);
+  box-shadow: 0 6px 14px -4px rgba(0,29,77,.45);
 }
 .timeline-item:last-child{ border-left-color: transparent; }
 .timeline-time{ font-family: var(--font-mono); font-weight:700; color: var(--ink); font-size:15px; margin-left:-64px; text-align:right; padding-right: 8px; }
@@ -287,7 +285,7 @@ section{ padding: 80px 0; position: relative; }
 .timeline-tag{
   display:inline-block; background: var(--accent-soft); color: var(--accent);
   font-family: var(--font-mono); font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.08em;
-  padding:4px 10px; border-radius: var(--radius-tag); margin-bottom:11px; border: 1px solid rgba(142,36,53,.2);
+  padding:4px 10px; border-radius: var(--radius-tag); margin-bottom:11px; border: 1px solid rgba(202,1,1,.2);
 }
 .timeline-body h3{ font-size: 17px; margin-bottom:7px; color: var(--navy); }
 .timeline-speaker{ color: var(--ink-muted); font-size:13.5px; }

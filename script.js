@@ -157,7 +157,7 @@
       text: window.location.href,
       width: 160,
       height: 160,
-      colorDark: "#112A63",
+      colorDark: "#002E62",
       colorLight: "#ffffff",
       correctLevel: QRCode.CorrectLevel.M,
     });
