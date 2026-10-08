@@ -5,8 +5,8 @@
    * 運営者向け設定（本番公開前にここだけ書き換えてください）
    * ========================================================= */
   const CONFIG = {
-    // Microsoft Forms の申込フォームURLに差し替えてください
-    FORMS_URL: "https://forms.office.com/REPLACE_WITH_YOUR_FORM_URL",
+    // Microsoft Forms の申込フォームURL
+    FORMS_URL: "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=husiByRh5U6z3a3dV7HHvDVQhqXAPyJKseN_T5CgRbJUNUxOSFFNNEVHWldJUVFGMkZBQzY5V1NaSyQlQCN0PWcu",
 
     EVENT_TITLE: "中小企業の生成AI活用について（オンラインセミナー）",
     EVENT_START: "2026-11-27T14:00:00+09:00",
