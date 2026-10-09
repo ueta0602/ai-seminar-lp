@@ -237,8 +237,13 @@ section{ padding: 80px 0; position: relative; }
 @media (max-width: 560px){ .hero-emblem{ height: 90px; } }
 .hero .chip{ background: var(--navy-deep); color: #fff; border-color: rgba(255,255,255,.22); text-shadow: none; box-shadow: 0 6px 16px -8px rgba(0,0,0,.5); }
 .hero .chip::before{ background: var(--accent-light); }
-.hero h1{ font-size: clamp(28px, 4vw, 42px); line-height: 1.55; margin: 16px 0 20px; color:#fff; text-shadow: 0 2px 18px rgba(0,0,0,.7); }
-.hero h1 em{ font-style:normal; color: var(--accent-light); }
+.hero h1{ font-size: clamp(34px, 5.6vw, 58px); line-height: 1.4; margin: 16px 0 20px; color:#fff; text-shadow: none; text-wrap: balance; }
+.hero h1 em{
+  font-style:normal;
+  background: linear-gradient(180deg, #FFF6D9 0%, #FFE27A 30%, #FFC93C 60%, #E8A317 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: none;
+}
 .hero-date{
   display:inline-flex; align-items:baseline; gap:10px;
   font-family: var(--font-mono); font-weight:700; letter-spacing:.04em;
