@@ -1,8 +1,7 @@
 /* =========================================================
  * HIKARI ADVISOR GROUP 公式ブランドカラー準拠テーマ
- * （260925_HAGスライドマスター.pptx の「パーツ集」スライドより
- *  HAG BLUE = #002E62 / HAG RED = #CA0101 を抽出して使用。
- *  本文色・背景も同資料の暖色系グレー／アイボリーに合わせた）
+ * （260917_hikari_brandbook_ver1.pdf 準拠）
+ *  HAG BLUE = #002E62 / HAG RED = #CA0101 / Ivory = #EAE5DA
  * ========================================================= */
 :root{
   --navy-deep: #001D4D;    /* HAG BLUE グラデーション最暗部 */
@@ -13,10 +12,10 @@
   --accent-deep: #BB0100;  /* HAG RED グラデーション暗部 */
   --accent-light: #FF2C29; /* HAG RED グラデーション明部 */
   --accent-soft: #FFCACE;  /* 公式資料の赤系ライトトーン */
-  --bg: #FAF9F6;           /* 公式アイボリー(#EAE5DA)を薄めたニュートラル地 */
+  --bg: #EAE5DA;           /* ブランドブック バックグラウンドカラー「Ivory」そのもの */
   --surface: #FFFFFF;
-  --surface-solid: #F2EFE9;
-  --surface-alt: #F3F1EB;
+  --surface-solid: #F2EEE3;
+  --surface-alt: #E2DBC8;
   --ink: #4E4C4B;          /* 公式資料の本文色（暖色グレー） */
   --ink-muted: #76736F;
   --ink-faint: #A6A29A;
@@ -228,7 +227,7 @@ section{ padding: 80px 0; position: relative; }
 .hero .inner::before{
   content:""; position:absolute; z-index:-1;
   top:-16px; bottom:-16px; left:-9999px; right:-24px;
-  background: linear-gradient(90deg, rgba(35,2,6,.68) 0%, rgba(35,2,6,.55) 70%, rgba(35,2,6,0) 100%);
+  background: linear-gradient(90deg, rgba(5,8,20,.82) 0%, rgba(5,8,20,.72) 75%, rgba(5,8,20,0) 100%);
 }
 .hero-emblem{
   height: 140px; width: auto; max-width: 100%; object-fit: contain;
