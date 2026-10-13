@@ -6,7 +6,7 @@
    * ========================================================= */
   const CONFIG = {
     // Microsoft Forms の申込フォームURL
-    FORMS_URL: "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=husiByRh5U6z3a3dV7HHvDVQhqXAPyJKseN_T5CgRbJUNUxOSFFNNEVHWldJUVFGMkZBQzY5V1NaSyQlQCN0PWcu",
+    FORMS_URL: "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=husiByRh5U6z3a3dV7HHvDVQhqXAPyJKseN_T5CgRbJUNFFXQ0ZDNUlJODNEM1ZTSlZHQU45NEhCRyQlQCN0PWcu",
 
     EVENT_TITLE: "中小企業の生成AI活用について（オンラインセミナー）",
     EVENT_START: "2026-11-27T14:00:00+09:00",
