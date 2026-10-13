@@ -17,6 +17,10 @@
     // 任意：申込状況に応じて残席バーの表示を調整する場合はここを更新
     TOTAL_SEATS: 200,
     REGISTERED_SEATS: 0,
+
+    // 紹介文・紹介URLのデフォルト値（index.html内の表記と合わせてください）。
+    // カスタムドメイン移行後もこの値を実際のURLに更新してください。
+    CANONICAL_URL: "https://ai-seminar-lp.hikari-dp.workers.dev/",
   };
 
   const isFormsReady = !CONFIG.FORMS_URL.includes("REPLACE_WITH");
@@ -167,7 +171,7 @@
   const pageUrl = window.location.origin + window.location.pathname;
   const referralText = document.getElementById("referralText");
   const referralUrl = document.getElementById("referralUrl");
-  if (referralText) referralText.value = referralText.value.replace("{{PAGE_URL}}", pageUrl);
+  if (referralText) referralText.value = referralText.value.split(CONFIG.CANONICAL_URL).join(pageUrl);
   if (referralUrl) referralUrl.textContent = pageUrl;
 
   function flashCopied(btn, originalLabel) {
