@@ -353,6 +353,7 @@ section{ padding: 80px 0; position: relative; }
 .audience-photo-alt{ border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
 .audience-photo img{ width:100%; height:100%; object-fit:cover; display:block; }
 .audience-card h3{ font-size:18px; margin-bottom:11px; color: var(--navy); }
+.nowrap{ white-space: nowrap; }
 .audience-card p{ color: var(--ink-muted); font-size:15px; }
 
 /* ===== Timeline（チラシの番号バッジ表現を踏襲） ===== */
